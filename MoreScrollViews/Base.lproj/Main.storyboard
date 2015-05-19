@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -12,18 +13,24 @@
                         <viewControllerLayoutGuide type="top" id="abX-4J-NmP"/>
                         <viewControllerLayoutGuide type="bottom" id="KhH-mN-i0n"/>
                     </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="gc8-Pg-WPR">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gc8-Pg-WPR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Lighthouse-in-Field" translatesAutoresizingMaskIntoConstraints="NO" id="ZwY-VY-o1P">
-                                <rect key="frame" x="200" y="287" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-in-Field" translatesAutoresizingMaskIntoConstraints="NO" id="ZwY-VY-o1P">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1920" id="5ir-S1-55x"/>
-                                    <constraint firstAttribute="height" constant="1080" id="Bbe-Jk-Avr"/>
+                                    <constraint firstAttribute="height" constant="1080" id="ao9-ev-RXG"/>
+                                    <constraint firstAttribute="width" constant="1920" id="zRc-KE-rNM"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="ZwY-VY-o1P" firstAttribute="top" secondItem="gc8-Pg-WPR" secondAttribute="topMargin" id="Yoy-bg-3fC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ZwY-VY-o1P" secondAttribute="bottom" id="kEL-Mz-jCT"/>
+                            <constraint firstAttribute="trailing" secondItem="ZwY-VY-o1P" secondAttribute="trailing" id="keD-4t-0M9"/>
+                            <constraint firstItem="ZwY-VY-o1P" firstAttribute="leading" secondItem="gc8-Pg-WPR" secondAttribute="leading" id="wYw-61-Gm3"/>
+                        </constraints>
                         <connections>
                             <outlet property="delegate" destination="BYZ-38-t0r" id="PS2-UP-iUD"/>
                         </connections>
