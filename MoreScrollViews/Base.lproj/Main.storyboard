@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abX-4J-NmP"/>
+                        <viewControllerLayoutGuide type="bottom" id="KhH-mN-i0n"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="gc8-Pg-WPR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Lighthouse-in-Field" translatesAutoresizingMaskIntoConstraints="NO" id="ZwY-VY-o1P">
+                                <rect key="frame" x="200" y="287" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1920" id="5ir-S1-55x"/>
+                                    <constraint firstAttribute="height" constant="1080" id="Bbe-Jk-Avr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="PS2-UP-iUD"/>
+                        </connections>
+                    </scrollView>
+                    <connections>
+                        <outlet property="scrollView" destination="gc8-Pg-WPR" id="2HU-8h-Dkl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lighthouse-in-Field" width="960" height="540"/>
+    </resources>
+</document>
